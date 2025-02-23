@@ -12,7 +12,5 @@ export class CreateBannerDto {
   @IsNotEmpty()
   link: string;
 
-  @IsBoolean()
-  @IsOptional()
   is_active?: boolean;
 }

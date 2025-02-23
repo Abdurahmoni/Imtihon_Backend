@@ -5,7 +5,13 @@ export class CreateOrderDto {
 
   address_id?: number;
 
-  @IsEnum(['pending', 'completed', 'cancelled'])
+  @IsEnum([
+    'yigilmoqda',
+    'yetkazilmoqda',
+    'yetkazildi',
+    'qabul qilindi',
+    'bekor qilindi',
+  ])
   @IsOptional()
   status?: string;
 
